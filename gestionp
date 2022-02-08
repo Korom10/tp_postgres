@@ -1,0 +1,20 @@
+select entreprise.nom_entreprise, projet.intitule_projet, secteur.nom_secteur from entreprise 
+inner join projet on entreprise.id_entreprise=projet.id_projet
+inner join secteur on entreprise.id_entreprise=secteur.idsecteur; 
+
+
+
+       nom_entreprise       |                                                        intitule_projet                                                         |         nom_secteur         
+----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------------------------
+ Mi Tempor Company          | quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse                                                     | 844-702 Purus Rd.
+ Curabitur Sed Tortor Corp. | quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse        | 388 Auctor Rd.
+ In Dolor Corp.             | molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et                  | Ap #878-2769 Primis Rd.
+ Nisi Company               | eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris                                                      | 7386 Sapien, St.
+ Ipsum Institute            | rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio         | 693-8363 Iaculis St.
+ Adipiscing Consulting      | etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut         | Ap #311-4068 Nulla Av.
+ Id Foundation              | a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque      | Ap #715-1259 Molestie Rd.
+ Risus Inc.                 | sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis                       | P.O. Box 211, 1397 Sit Road
+ Sed Ltd                    | nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed | P.O. Box 760, 3205 Sit St.
+ Nascetur LLP               | malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet                          | 219-5442 Ipsum Rd.
+(10 rows)
+
